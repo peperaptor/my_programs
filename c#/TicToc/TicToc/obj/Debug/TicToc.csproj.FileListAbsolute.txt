@@ -46,3 +46,16 @@ C:\Users\Дом\Dropbox\TicToc\TicToc\obj\Debug\TicToc.csproj.GenerateResource.C
 C:\Users\Дом\Dropbox\TicToc\TicToc\obj\Debug\TicToc.csproj.CoreCompileInputs.cache
 C:\Users\Дом\Dropbox\TicToc\TicToc\obj\Debug\TicToc.exe
 C:\Users\Дом\Dropbox\TicToc\TicToc\obj\Debug\TicToc.pdb
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\bin\Debug\TicToc.exe.config
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\bin\Debug\TicToc.exe
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\bin\Debug\TicToc.pdb
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\obj\Debug\TicToc.Form1.resources
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\obj\Debug\TicToc.Properties.Resources.resources
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\obj\Debug\TicToc.csproj.GenerateResource.cache
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\obj\Debug\TicToc.csproj.CoreCompileInputs.cache
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\obj\Debug\TicToc.exe
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\obj\Debug\TicToc.pdb
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\bin\Debug\TicToc.exe.manifest
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\bin\Debug\TicToc.application
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\obj\Debug\TicToc.exe.manifest
+C:\Users\olegb\Documents\GitHub\my_programs\c#\TicToc\TicToc\obj\Debug\TicToc.application
