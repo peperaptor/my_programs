@@ -1,0 +1,725 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml-transitional.dtd">
+<!-- saved from url=(0071)https://progtest.fit.cvut.cz/index.php?X=Task&Cou=319&Tgr=2019&Tsk=1193 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="stndz-style">div[class*="item-container-obpd"], a[data-redirect*="paid.outbrain.com"], a[onmousedown*="paid.outbrain.com"] { display: none !important; } a div[class*="item-container-ad"] { height: 0px !important; overflow: hidden !important; position: absolute !important; } div[data-item-syndicated="true"] { display: none !important; } .grv_is_sponsored { display: none !important; } .zergnet-widget-related { display: none !important; } </style>
+  <title>balatole@progtest.fit.cvut.cz - ProgTest</title>
+  
+  <link href="./balatole@progtest.fit.cvut.cz - ProgTest_files/css.css" rel="stylesheet" type="text/css">
+  <script src="./balatole@progtest.fit.cvut.cz - ProgTest_files/shared.js.download" language="JavaScript" type="text/javascript"></script>
+  
+ </head>
+ <body bgcolor="#828273" text="#000000">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr height="25">
+    <td align="left" bgcolor="#00ff00"><span class="navLink"><a class="navLink" href="https://progtest.fit.cvut.cz/index.php?X=Main">ProgTest</a>&nbsp;&nbsp;►&nbsp;&nbsp;<a class="navLink" href="https://progtest.fit.cvut.cz/index.php?X=Course&amp;Cou=319">BI-PA2 (20/21 LS)</a>&nbsp;&nbsp;►&nbsp;&nbsp;<a class="navLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskGrp&amp;Cou=319&amp;Tgr=2019">Domácí úloha 02</a>&nbsp;&nbsp;►&nbsp;&nbsp;<b>Registr automobilů</b></span></td>
+    <td align="right" bgcolor="#00ff00"><a class="navLink" href="https://progtest.fit.cvut.cz/index.php?X=Logout">Logout</a></td>
+   </tr>
+  </tbody></table>
+<br>
+
+
+
+
+ <br>
+ <br>
+   <center>
+   <div class="topLayout">
+    <div class="outBox">
+     <table class="header" width="100%" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+       <td class="header"><b>Registr automobilů</b></td>
+      </tr>
+     </tbody></table>
+    </div>
+   </div>
+  </center>
+ <form name="form1" method="post" action="https://progtest.fit.cvut.cz/index.php?X=TaskU&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193" enctype="multipart/form-data">
+  <center>
+    <div class="topLayout">
+     <div class="outBox">
+      <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+       <colgroup><col width="200">
+       <col>
+       <col width="130">
+
+       </colgroup><tbody><tr>
+        <td class="ltCell" align="left"><b>Termín odevzdání:</b></td>
+        <td class="tCell" align="left"><b>28.03.2021 23:59:59</b></td>
+        <td class="rtCell" align="right" id="countdown">&nbsp;</td>
+       </tr>
+
+       <tr>
+        <td class="lCell" align="left"><b>Pozdní odevzdání s penalizací:</b></td>
+        <td class="rCell" align="left" colspan="2"><b>30.06.2021 23:59:59</b> (Penále za pozdní odevzdání: 100.0000 %)</td>
+       </tr>
+
+       <tr>
+        <td class="lCell" align="left"><b>Hodnocení:</b></td>
+        <td class="rCell" colspan="2" align="left"><b>5.0000</b></td>
+       </tr>
+       <tr>
+        <td class="lCell" align="left"><b>Max. hodnocení:</b></td>
+        <td class="rCell" colspan="2" align="left"><b>5.0000</b> (bez bonusů)</td>
+       </tr>
+       <tr>
+        <td class="lCell" align="left"><b>Odevzdaná řešení:</b></td>
+        <td class="rCell" colspan="2" align="left">5 /  20 Volné pokusy + 20 Penalizované pokusy (-2 % penalizace za každé odevzdání)</td>
+       </tr>
+
+       <tr>
+        <td class="lbCell" align="left"><b>Nápovědy:</b></td>
+        <td class="rbCell" colspan="2" align="left">1 / 2 Volné nápovědy + 2 Penalizované nápovědy (-10 % penalizace za každou nápovědu)</td>
+       </tr>
+
+       <tr>
+        <td class="lrtbCell" colspan="3" align="left"><p>Úkolem je realizovat třídu <tt>CRegister</tt>, která bude implementovat
+databázi automobilů.</p>
+
+<p>Naše databáze bude evidovat občany a automobily, které vlastní. 
+Občan je identifikován svým jménem a příjmením. Jména a příjmení se mohou opakovat, 
+ale dvojice (jméno, příjmení) je v databázi unikátní. Tedy v databázi může být mnoho 
+jmen <tt>Jan</tt> a mnoho příjmení <tt>Novak</tt>, ale <tt>Jan Novak</tt> může 
+být v databázi v daný okamžik pouze jeden. Automobily jsou pak jednoznačně 
+identifikované svojí registrační značkou RZ. Předpokládáme, že automobil má vždy 
+jednoho vlastníka, jeden občan může vlastnit několik automobilů.</p>  
+
+<p>Veřejné rozhraní je uvedeno níže. Pro třídu <tt>CRegister</tt> obsahuje následující:</p>
+<ul>
+ <li>Konstruktor bez parametrů. Tento konstruktor inicializuje instanci třídy 
+  tak, že vzniklá instance je zatím prázdná (neobsahuje žádné záznamy).</li>
+
+ <li>Destruktor. Uvolňuje prostředky, které instance alokovala.</li>
+
+ <li>Metoda <tt>AddCar(RZ, name, surname)</tt> přidá do existující
+  databáze další záznam. Parametry <tt>name</tt> a <tt>surname</tt> reprezentují 
+  jméno a příjmení občana, <tt>RZ</tt> je identifikace automobilu. Metoda vrací hodnotu 
+  <tt>true</tt>, pokud byl záznam přidán, nebo hodnotu <tt>false</tt>, pokud dojde k 
+  chybě a automobil přidán nebyl. Chybou je, pokud již v databázi existuje automobil se
+  stejnou RZ.</li>
+
+ <li>Metoda <tt>DelCar (RZ)</tt> odstraní záznam z databáze. Parametrem je jednoznačná 
+  identifikace automobilu pomocí RZ. Pokud byl záznam skutečně odstraněn, 
+  vrátí metoda hodnotu <tt>true</tt>. Pokud záznam neodstraní (protože neexistoval 
+  automobil s touto identifikací), vrátí metoda hodnotu <tt>false</tt>. Metoda maže 
+  informaci o automobilu a dále bude mazat i vlastníka, pokud byl vymazán jeho poslední automobil.</li>
+
+ <li>Metoda <tt>Transfer ( RZ, name, surname )</tt> provede převod zadaného automobilu 
+  (<tt>RZ</tt>) ze stávajícího majitele na nového majitele zadaného parametry 
+  <tt>name</tt> a <tt>surname</tt>. Pokud metoda uspěje, vrací <tt>true</tt>, pro neúspěch 
+  vrací <tt>false</tt> (neexistující automobil, chybou je i pokus o převod, kdy stávající 
+  a nový majitel je ten samý občan). Metoda dále vymaže původního vlastníka, pokud již 
+  nevlastní žádné jiné automobily.</li>
+
+ <li>Metoda <tt>ListCars</tt> vyhledá automobily, které jsou vlastněné zadaným občanem. Metoda
+  vrátí objekt typu <tt>CCarList</tt>, pomocí kterého lze postupně projít nalezené záznamy 
+  (iterátor). Pokud občan zadaného jména a příjmení neexistuje, je vrácen iterátor s prázdným 
+  obsahem (0 automobilů).</li>
+
+ <li>Metoda <tt>CountCars ( name, surname )</tt> zjistí počet automobilů, který vlastní 
+  občan se zadaným jménem a příjmením. Pokud občan zadaného jména v databázi neexistuje, 
+  je vrácena 0.</li>
+
+ <li>Metoda <tt>ListPersons</tt> umožní procházet občany. Vrátí objekt typu 
+  <tt>CPersonList</tt>, pomocí kterého lze postupně projít jména a příjmení všech osob
+  v databázi (iterátor). Pokud je databáze prázdná, je vrácen iterátor s prázdným 
+  obsahem (0 osob).</li>
+
+ <li>Do třídy si budete muset přidat členské proměnné. Dále si do rozhraní můžete přidat 
+  další pomocné metody (ideálně neveřejné).</li>
+</ul>
+
+<p>Třída <tt>CCarList</tt> slouží k jednorázovému procházení seznamem automobilů, které 
+jsou vlastněné jedním občanem. V seznamu je vždy jeden automobil vybraný a v seznamu se 
+můžeme pohybovat vpřed. Rozhraní třídy <tt>CCarList</tt>:
+</p><ul>
+ <li>Metoda <tt>RZ</tt> zjistí RZ vybraného automobilu,</li>
+ <li>metoda <tt>AtEnd</tt> zjistí, zda jsme již dosáhli konce seznamu (vrátí true) nebo 
+  zda jsou ještě nějaké záznamy k dispozici (false).</li>
+ <li>Metoda <tt>Next</tt> posouvá v seznamu o jednu pozici směrem ke konci.</li>
+</ul>
+
+<p>Třída <tt>CPersonList</tt> slouží k jednorázovému procházení seznamem osob v databázi. 
+V seznamu je vždy jeden občan vybraný a v tomto seznamu se můžeme pohybovat vpřed. Občany 
+procházíme v seřazeném pořadí, řazení je podle příjmení a pro stejná příjmení pak podle 
+jména jako druhého kritéria. Rozhraní třídy <tt>CPersonList</tt>:
+</p><ul>
+ <li>metoda <tt>Name</tt> zjistí jméno vybrané osoby,</li>
+ <li>metoda <tt>Surname</tt> zjistí příjmení vybrané osoby,</li>
+ <li>metoda <tt>AtEnd</tt> zjistí, zda jsme již dosáhli konce seznamu (vrátí true) nebo 
+  zda jsou ještě nějaké záznamy k dispozici (false).</li>
+ <li>Metoda <tt>Next</tt> posouvá v seznamu o jednu pozici směrem ke konci.</li>
+</ul>
+
+<hr>
+
+<p>Odevzdávejte soubor, který obsahuje implementované třídy <tt>CRegister</tt>,
+<tt>CCarList</tt> a <tt>CPersonList</tt>. Třídy musí splňovat veřejné rozhraní podle ukázky - pokud Vámi 
+odevzdané řešení nebude obsahovat popsané rozhraní, dojde k chybě při kompilaci. Do třídy 
+si ale můžete doplnit další metody (veřejné nebo i privátní) a členské proměnné. 
+Odevzdávaný soubor musí obsahovat jak deklaraci třídy (popis rozhraní) tak i definice 
+metod, konstruktoru a destruktoru. Je jedno, zda jsou metody implementované inline 
+nebo odděleně. Odevzdávaný soubor nesmí obsahovat vkládání hlavičkových souborů a 
+funkci <tt>main</tt> (funkce <tt>main</tt> a vkládání hlavičkových souborů může zůstat, 
+ale pouze obalené direktivami podmíněného překladu jako v ukázce níže).</p>
+
+<p>Třídy jsou testované v omezeném prostředí, kde je limitovaná dostupná paměť (dostačuje 
+k uložení seznamu) a je omezena dobou běhu. Implementace třídy <tt>CRegister</tt> se 
+nemusí zabývat kopírujícím konstruktorem ani přetěžováním operátoru =. V této úloze 
+ProgTest neprovádí testy této funkčnosti. V přiloženém zdrojovém souboru jsou deklarace 
+zakazující kopírování instancí <tt>CRegister</tt> (deklarace <tt> ... = delete</tt>). Tyto 
+deklarace je vhodné ponechat beze změn.</p>
+
+<p>Naopak oba iterátory <tt>CCarList</tt> i <tt>CPersonList</tt> se kopírují (např. hned po 
+vytvoření při vracení z příslušných metod). Jejich implementace se může spolehnout na to, 
+že po dobu používání iterátoru není změněn ani zničen obsah instance <tt>CRegister</tt>, 
+který procházejí. Iterátory se proto mohou odkazovat na data z registru a nemusí je 
+k sobě kopírovat. Imlpementace iterátorů se tím zjednoduší.</p>
+
+<p>Implementace třídy musí být efektivní z hlediska nároků na čas i nároků na paměť. 
+Jednoduché lineární řešení nestačí (pro testovací data vyžaduje čas několika minut). 
+Předpokládejte, že operace převodů, zjišťování počtů automobilů a zjišťování 
+automobilů vlastněných zadaným občanem je častější než operace vkládaní a mazání
+automobilu.</p>
+
+<p>Pro ukládání záznamů v databázi alokujte prostor dynamicky případně použijte 
+kontejnery z STL. Pozor, pokud budete pole alokovat ve vlastní režii, zvolte 
+počáteční velikost malou (např. tisíc prvků) a velikost zvětšujte/zmenšujte 
+podle potřeby. Při zaplnění pole není vhodné alokovat nové pole větší pouze 
+o jednu hodnotu, takový postup má obrovskou režii na kopírování obsahu. 
+Je rozumné pole rozšiřovat s krokem řádově tisíců prvků, nebo geometrickou 
+řadou s kvocientem ~1.5 až 2.</p>
+
+<p>Pokud budete používat STL, nemusíte se starat o problémy s alokací pole. 
+Z STL máte v této úloze k dispozici povolený kontejner <tt>vector</tt> 
+(úmyslně ne <tt>list</tt>, <tt>set</tt>, <tt>map</tt> a další).</p>
+
+<p>V přiloženém archivu naleznete základ řešení (rozhraní požadovaných tříd) a sadu testovacích dat.</p>
+
+<p><b>Update 17.3.2021:</b> Řešení této úlohy, které projde povinnými i nepovinnými testy na 
+100 %, může být použité pro code review.</p>
+
+<p><b>Update 18.3.2021:</b> Přiložené ukázkové testy jsou rozšířené o kontroly, které se fakticky provádí, 
+ale v původní ukázce nebyly obsažené.</p>
+</td>
+       </tr>
+
+
+       <tr>
+        <td class="ltbCell" colspan="2" align="left"><b>Vzorová data:</b></td>
+        <td class="rtbCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskS&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193">Download</a></div></div></td>
+       </tr>
+
+
+
+
+
+
+
+
+
+
+
+      </tbody></table>
+     </div>
+    </div>
+
+
+ <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="reftable">
+   <tbody><tr>
+    <td class="ltbSepCell" align="left"><input type="checkbox" name="SHOW_REF" onchange="showRefSolution()">&nbsp;<b>Referenční řešení</b></td>
+    <td class="rtbSepCell" align="right">&nbsp;</td>
+   </tr>
+   <tr style="display: none;">
+    <td class="lrtbCell" align="left" colspan="2"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.000 s (limit: 5.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test meznich hodnot': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.081 s (limit: 5.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi vstupy (Add, List, Count)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.006 s (limit: 4.919 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi vstupy (Add, Del, List, Count)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.006 s (limit: 4.913 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test rychlosti (nahodne hodnoty)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.625 s (limit: 5.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi hodnotami + test prace s pameti': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 25.00 %</li><li>Celková doba běhu: 0.029 s (limit: 5.000 s)</li><li>Úspěch v nepovinném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test rychlosti (fixni jmena, nahodna prijmeni)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 75.00 %</li><li>Celková doba běhu: 0.562 s (limit: 5.000 s)</li><li>Úspěch v nepovinném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test rychlosti (nahodna jmena, fixni prijmeni)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 75.00 %</li><li>Celková doba běhu: 0.458 s (limit: 4.438 s)</li><li>Úspěch v nepovinném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Celkové hodnocení: 100.00 % (= 1.00 * 1.00 * 1.00 * 1.00 * 1.00 * 1.00 * 1.00 * 1.00)</li></ul></li><li>Celkové procentní hodnocení: 100.00 %</li><li>Bonus za včasné odevzdání: 0.50</li><li>Celkem bodů: 1.00 * ( 5.00 + 0.50 ) = 5.50</li></ul></td>
+   </tr>
+    <tr style="display: none;">
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>30</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>186</b></td>
+     <td class="ar"><span class="textOk">6.20 ± 5.30</span></td>
+     <td class="ar"><span class="textOk">27</span></td>
+     <td><tt>CRegister::AddCar</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>50</b></td>
+     <td class="ar"><span class="textOk">1.67 ± 1.22</span></td>
+     <td class="ar"><span class="textOk">6</span></td>
+     <td><tt>CRegister::Transfer</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>
+   </tbody></table>
+  </div>
+ </div>
+
+
+
+
+ <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbOkSepCell" align="left"><b>5</b></td>
+    <td class="tbOkSepCell" align="left"><b>22.04.2021 16:58:48</b></td>
+    <td class="rtbOkSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Sub=1284122">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.000 s (limit: 5.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test meznich hodnot': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.190 s (limit: 5.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi vstupy (Add, List, Count)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.028 s (limit: 4.810 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi vstupy (Add, Del, List, Count)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.028 s (limit: 4.782 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test rychlosti (nahodne hodnoty)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 1.325 s (limit: 5.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi hodnotami + test prace s pameti': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 25.00 %</li><li>Celková doba běhu: 0.113 s (limit: 5.000 s)</li><li>Úspěch v nepovinném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test rychlosti (fixni jmena, nahodna prijmeni)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 75.00 %</li><li>Celková doba běhu: 1.311 s (limit: 5.000 s)</li><li>Úspěch v nepovinném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test rychlosti (nahodna jmena, fixni prijmeni)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 75.00 %</li><li>Celková doba běhu: 1.127 s (limit: 3.689 s)</li><li>Úspěch v nepovinném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Celkové hodnocení: 100.00 % (= 1.00 * 1.00 * 1.00 * 1.00 * 1.00 * 1.00 * 1.00 * 1.00)</li></ul></li><li>Použité nápovědy: 1</li><li>Penalizace za vyčerpané nápovědy: Není (1 &lt;= 2 limit)</li><li>Celkové procentní hodnocení: 100.00 %</li><li>Penalizace za odevzdání po termínu: 5.00</li><li>Celkem bodů: 1.00 * ( 5.00 - 5.00 ) = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>21</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>238</b></td>
+     <td class="ar"><span class="textOk">11.33 ± 12.69</span></td>
+     <td class="ar"><span class="textWarn">60</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>51</b></td>
+     <td class="ar"><span class="textOk">2.43 ± 2.77</span></td>
+     <td class="ar"><span class="textOk">13</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbOkSepCell" align="left"><b>4</b></td>
+    <td class="tbOkSepCell" align="left"><b>28.03.2021 16:13:53</b></td>
+    <td class="rtbOkSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Sub=1270059">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">5.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.000 s (limit: 5.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test meznich hodnot': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.191 s (limit: 5.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi vstupy (Add, List, Count)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.028 s (limit: 4.809 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi vstupy (Add, Del, List, Count)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.027 s (limit: 4.781 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test rychlosti (nahodne hodnoty)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 1.331 s (limit: 5.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi hodnotami + test prace s pameti': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 25.00 %</li><li>Celková doba běhu: 0.121 s (limit: 5.000 s)</li><li>Úspěch v nepovinném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test rychlosti (fixni jmena, nahodna prijmeni)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 75.00 %</li><li>Celková doba běhu: 1.302 s (limit: 5.000 s)</li><li>Úspěch v nepovinném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test rychlosti (nahodna jmena, fixni prijmeni)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 75.00 %</li><li>Celková doba běhu: 1.124 s (limit: 3.698 s)</li><li>Úspěch v nepovinném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Celkové hodnocení: 100.00 % (= 1.00 * 1.00 * 1.00 * 1.00 * 1.00 * 1.00 * 1.00 * 1.00)</li></ul></li><li>Použité nápovědy: 1</li><li>Penalizace za vyčerpané nápovědy: Není (1 &lt;= 2 limit)</li><li>Celkové procentní hodnocení: 100.00 %</li><li>Celkem bodů: 1.00 * 5.00 = 5.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>21</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>237</b></td>
+     <td class="ar"><span class="textOk">11.29 ± 12.51</span></td>
+     <td class="ar"><span class="textWarn">59</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>51</b></td>
+     <td class="ar"><span class="textOk">2.43 ± 2.77</span></td>
+     <td class="ar"><span class="textOk">13</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>3</b></td>
+    <td class="tbFailSepCell" align="left"><b>28.03.2021 16:05:31</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Sub=1270046">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.000 s (limit: 5.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test meznich hodnot': Neúspěch<ul><li>Dosaženo: 95.02 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.565 s (limit: 5.000 s)</li><li>Neúspěch v závazném testu, hodnocení: 0.00 %</li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061016&#39;)">[Zpřístupnit nápovědu (49 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061017&#39;)">[Zpřístupnit nápovědu (50 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061018&#39;)">[Zpřístupnit nápovědu (51 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061019&#39;)">[Zpřístupnit nápovědu (49 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061020&#39;)">[Zpřístupnit nápovědu (59 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061021&#39;)">[Zpřístupnit nápovědu (51 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061022&#39;)">[Zpřístupnit nápovědu (73 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061023&#39;)">[Zpřístupnit nápovědu (73 B)]</a></li></ul></li>
+<li>Celkové hodnocení: 0.00 % (= 1.00 * 0.00)</li></ul></li><li>Použité nápovědy: 1</li><li>Penalizace za vyčerpané nápovědy: Není (1 &lt;= 2 limit)</li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 5.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>22</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>245</b></td>
+     <td class="ar"><span class="textOk">11.14 ± 12.33</span></td>
+     <td class="ar"><span class="textWarn">59</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>51</b></td>
+     <td class="ar"><span class="textOk">2.32 ± 2.64</span></td>
+     <td class="ar"><span class="textOk">13</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>2</b></td>
+    <td class="tbFailSepCell" align="left"><b>28.03.2021 16:03:19</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Sub=1270044">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.000 s (limit: 5.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test meznich hodnot': Neúspěch<ul><li>Dosaženo: 95.02 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.697 s (limit: 5.000 s)</li><li>Neúspěch v závazném testu, hodnocení: 0.00 %</li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061007&#39;)">[Zpřístupnit nápovědu (49 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061008&#39;)">[Zpřístupnit nápovědu (50 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061009&#39;)">[Zpřístupnit nápovědu (51 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061010&#39;)">[Zpřístupnit nápovědu (49 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061011&#39;)">[Zpřístupnit nápovědu (59 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061012&#39;)">[Zpřístupnit nápovědu (51 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061013&#39;)">[Zpřístupnit nápovědu (75 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4061014&#39;)">[Zpřístupnit nápovědu (75 B)]</a></li></ul></li>
+<li>Celkové hodnocení: 0.00 % (= 1.00 * 0.00)</li></ul></li><li>Použité nápovědy: 1</li><li>Penalizace za vyčerpané nápovědy: Není (1 &lt;= 2 limit)</li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 5.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>22</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>245</b></td>
+     <td class="ar"><span class="textOk">11.14 ± 12.33</span></td>
+     <td class="ar"><span class="textWarn">59</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>51</b></td>
+     <td class="ar"><span class="textOk">2.32 ± 2.64</span></td>
+     <td class="ar"><span class="textOk">13</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>1</b></td>
+    <td class="tbFailSepCell" align="left"><b>28.03.2021 15:50:43</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Sub=1270028">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.000 s (limit: 5.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test meznich hodnot': Neúspěch<ul><li>Dosaženo: 95.02 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.622 s (limit: 5.000 s)</li><li>Neúspěch v závazném testu, hodnocení: 0.00 %</li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4060942&#39;)">[Zpřístupnit nápovědu (49 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4060943&#39;)">[Zpřístupnit nápovědu (50 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4060944&#39;)">[Zpřístupnit nápovědu (51 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4060945&#39;)">[Zpřístupnit nápovědu (49 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4060946&#39;)">[Zpřístupnit nápovědu (59 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4060947&#39;)">[Zpřístupnit nápovědu (51 B)]</a></li><li><input type="checkbox" name="cb_T4060948" onchange="CBpressed( &#39;T4060948&#39; )">&nbsp;Nesprávný výstup<div id="pre_T4060948" style="display: none; padding-left: 20px;"><pre> CountCars ( " Eatnzkuoyooa", "Eiknnaulxkbbba" ) size mismatch (r=2, s=4)</pre></div></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2019&amp;Tsk=1193&amp;Unl=L4060949&#39;)">[Zpřístupnit nápovědu (73 B)]</a></li></ul></li>
+<li>Celkové hodnocení: 0.00 % (= 1.00 * 0.00)</li></ul></li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 5.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>22</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>245</b></td>
+     <td class="ar"><span class="textOk">11.14 ± 12.19</span></td>
+     <td class="ar"><span class="textWarn">58</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>51</b></td>
+     <td class="ar"><span class="textOk">2.32 ± 2.64</span></td>
+     <td class="ar"><span class="textOk">13</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div>
+  </center>
+ </form>
+
+
+
+
+
+
+
+
+<script language="javascript" type="text/javascript">
+<!--
+
+var deadLine = new Date ( 1616968799 * 1000 );
+
+function CBpressed ( num )
+ {
+   var pre, cb;
+
+   cb = MM_findObj ( "cb_" + num );
+   pre = MM_findObj ( "pre_" + num );
+   if ( cb != null && pre != null )
+    {
+      pre . style . display = cb . checked ? "block" : "none";
+    }
+ }
+
+function unlockAdvice ( url )
+ {
+   if ( confirm ( 'Máte k dispozici pouze omezený počet nápověd. Navíc, použití nápovědy může snížit bodové hodnocení. Opravdu chcete zpřístupnit tuto nápovědu?' ) )
+    this . location = url;
+ }
+
+function setCountdown ( )
+ {
+   var d = new Date ();
+   var x = ( deadLine . getTime () - d . getTime () );
+   var tgt = document . getElementById ( "countdown" );
+
+   if ( x > 0 )
+    {
+      var s = Math . floor ( x / 1000 );
+      var ms = (x % 1000) + "";
+
+      while ( ms . length  < 3 ) ms = "0" + ms;
+
+      tgt . innerHTML = s + "." + ms + " sec";
+
+      window . setTimeout ( setCountdown, 117 );
+    }
+   else
+    {
+      tgt . innerHTML = '&nbsp;';
+    }
+ }
+
+function showRefSolution ( )
+ {
+   var t = document . getElementById ( "reftable" );
+   var x = document . getElementsByName ( "SHOW_REF" )[0];
+
+   if ( ! x ) return;
+   var r1 = t . rows[1], r2 = t . rows[2];
+
+   if ( x . checked )
+    {
+      r1 . style . display = "";
+      if ( r2 ) r2 . style . display = "";
+    }
+   else
+    {
+      r1 . style . display = "none";
+      if ( r2 ) r2 . style . display = "none";
+    }
+ }
+
+
+setCountdown ();
+showRefSolution ();
+
+// -->
+</script>
+
+
+
+
+
+ 
+
+<!-- Template run time: 0.18911504745483 sec -->
+</body></html>
