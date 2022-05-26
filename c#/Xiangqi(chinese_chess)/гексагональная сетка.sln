@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "гексагональная сетка", "гексагональная сетка\гексагональная сетка.csproj", "{93CC9C6D-3A89-4802-9397-658B812C49C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine3d", "..\3Д енгине\Engine3d\Engine3d.csproj", "{DB34471F-079E-4E53-9892-61F38B21F4F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93CC9C6D-3A89-4802-9397-658B812C49C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CC9C6D-3A89-4802-9397-658B812C49C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CC9C6D-3A89-4802-9397-658B812C49C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CC9C6D-3A89-4802-9397-658B812C49C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB34471F-079E-4E53-9892-61F38B21F4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB34471F-079E-4E53-9892-61F38B21F4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB34471F-079E-4E53-9892-61F38B21F4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB34471F-079E-4E53-9892-61F38B21F4F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {364E69B2-E2CD-4203-A7C2-1DA0AEB6BA2A}
+	EndGlobalSection
+EndGlobal
