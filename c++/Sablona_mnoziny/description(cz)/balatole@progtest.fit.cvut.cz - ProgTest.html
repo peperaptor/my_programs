@@ -1,0 +1,1040 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml-transitional.dtd">
+<!-- saved from url=(0071)https://progtest.fit.cvut.cz/index.php?X=Task&Cou=319&Tgr=2096&Tsk=1691 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="stndz-style">div[class*="item-container-obpd"], a[data-redirect*="paid.outbrain.com"], a[onmousedown*="paid.outbrain.com"] { display: none !important; } a div[class*="item-container-ad"] { height: 0px !important; overflow: hidden !important; position: absolute !important; } div[data-item-syndicated="true"] { display: none !important; } .grv_is_sponsored { display: none !important; } .zergnet-widget-related { display: none !important; } </style>
+  <title>balatole@progtest.fit.cvut.cz - ProgTest</title>
+  
+  <link href="./balatole@progtest.fit.cvut.cz - ProgTest_files/css.css" rel="stylesheet" type="text/css">
+  <script src="./balatole@progtest.fit.cvut.cz - ProgTest_files/shared.js.download" language="JavaScript" type="text/javascript"></script>
+  
+ </head>
+ <body bgcolor="#828273" text="#000000">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr height="25">
+    <td align="left" bgcolor="#00ff00"><span class="navLink"><a class="navLink" href="https://progtest.fit.cvut.cz/index.php?X=Main">ProgTest</a>&nbsp;&nbsp;►&nbsp;&nbsp;<a class="navLink" href="https://progtest.fit.cvut.cz/index.php?X=Course&amp;Cou=319">BI-PA2 (20/21 LS)</a>&nbsp;&nbsp;►&nbsp;&nbsp;<a class="navLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskGrp&amp;Cou=319&amp;Tgr=2096">Cvičná úloha 09</a>&nbsp;&nbsp;►&nbsp;&nbsp;<b>Šablona množiny</b></span></td>
+    <td align="right" bgcolor="#00ff00"><a class="navLink" href="https://progtest.fit.cvut.cz/index.php?X=Logout">Logout</a></td>
+   </tr>
+  </tbody></table>
+<br>
+
+
+
+
+ <br>
+ <br>
+   <center>
+   <div class="topLayout">
+    <div class="outBox">
+     <table class="header" width="100%" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+       <td class="header"><b>Šablona množiny</b></td>
+      </tr>
+     </tbody></table>
+    </div>
+   </div>
+  </center>
+ <form name="form1" method="post" action="https://progtest.fit.cvut.cz/index.php?X=TaskU&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691" enctype="multipart/form-data">
+  <center>
+    <div class="topLayout">
+     <div class="outBox">
+      <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+       <colgroup><col width="200">
+       <col>
+       <col width="130">
+
+       </colgroup><tbody><tr>
+        <td class="ltCell" align="left"><b>Termín odevzdání:</b></td>
+        <td class="tCell" align="left"><b>18.04.2021 23:59:59</b></td>
+        <td class="rtCell" align="right" id="countdown">&nbsp;</td>
+       </tr>
+
+       <tr>
+        <td class="lCell" align="left"><b>Pozdní odevzdání s penalizací:</b></td>
+        <td class="rCell" align="left" colspan="2"><b>16.05.2021 23:59:59</b> (Penále za pozdní odevzdání: 100.0000 % - 100.00 %)</td>
+       </tr>
+
+       <tr>
+        <td class="lCell" align="left"><b>Hodnocení:</b></td>
+        <td class="rCell" colspan="2" align="left"><b>1.0000</b></td>
+       </tr>
+       <tr>
+        <td class="lCell" align="left"><b>Max. hodnocení:</b></td>
+        <td class="rCell" colspan="2" align="left"><b>1.0000</b> (bez bonusů)</td>
+       </tr>
+       <tr>
+        <td class="lCell" align="left"><b>Odevzdaná řešení:</b></td>
+        <td class="rCell" colspan="2" align="left">14 /  25</td>
+       </tr>
+
+       <tr>
+        <td class="lbCell" align="left"><b>Nápovědy:</b></td>
+        <td class="rbCell" colspan="2" align="left">12 / 25</td>
+       </tr>
+
+       <tr>
+        <td class="lrtbCell" colspan="3" align="left"><p>Vaším úkolem je realizovat šablonu <code>CSet</code>, která bude reprezentovat abstraktní datový typ množina. Po vás se chce implementovat jen základní operace, splňující následující rozhraní:</p>
+
+<dl>
+    <dt>konstruktor bez parametrů</dt>
+    <dd>Inicializuje prázdnou množinu.</dd>
+
+    <dt>kopírující konstruktor</dt>
+    <dd>Vytvoří hlubokou kopii.</dd>
+
+    <dt>operátor přiřazení</dt>
+    <dd>Odstraní aktuální množinu a vytvoří hlubokou kopii předané.</dd>
+
+    <dt>destruktor</dt>
+    <dd>Uvolní alokované prostředky.</dd>
+
+    <dt><code>bool Insert ( Type )</code></dt>
+    <dd>Vloží do množiny objekt typu <code>Type</code>, vrací <code>true</code> pokud se vložení povede. Pokud již v množině objekt je, vrátí funkce <code>false</code> a množinu nemění.</dd>
+
+    <dt><code>bool Remove ( Type )</code></dt>
+    <dd>Odstraní z množiny objekt typu <code>Type</code>, vrací <code>true</code> pokud se smazání povede. Pokud v množině objekt není, vrátí funkce <code>false</code> a množinu nemění.</dd>
+
+    <dt><code>size_t Size () const</code></dt>
+    <dd>Vrací počet prvků v množině.</dd>
+
+    <dt><code>bool Contains ( Type )</code></dt>
+    <dd>Vrací <code>true</code> pokud se objekt typu <code>Type</code> nachází v množině, jinak <code>false</code>.</dd>
+</dl>
+
+<p>Třída <code>Type</code>, parametr šablony, má garantované následující funkcionality:</p>
+
+<ul>
+    <li>kopírující konstruktor,</li>
+    <li>operátor přiřazení,</li>
+    <li><code>operator&lt;</code> pro porovnání dvou prvků.</li>
+</ul>
+
+<p>Pro implementaci můžete využít třídu <code>CLinkedSet</code> z dřívější procvičovací úlohy.</p>
+
+<hr>
+
+<strong>Nápověda</strong>
+
+<ul>
+    <li>Pokud budete implementovat <code>CSet</code> pomocí pole, zamyslete se, zda vám budou dostačovat funkcionality třídy <code>Type</code>.</li>
+    <li>Pokud vám program nejde zkompilovat, ujistěte se, že dodržujete specifikované rozhraní (nepožadujete od prvků nic navíc).</li>
+</ul>
+</td>
+       </tr>
+
+
+       <tr>
+        <td class="ltbCell" colspan="2" align="left"><b>Vzorová data:</b></td>
+        <td class="rtbCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskS&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691">Download</a></div></div></td>
+       </tr>
+
+
+
+
+
+
+
+
+
+
+
+      </tbody></table>
+     </div>
+    </div>
+
+
+ <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="reftable">
+   <tbody><tr>
+    <td class="ltbSepCell" align="left"><input type="checkbox" name="SHOW_REF" onchange="showRefSolution()">&nbsp;<b>Referenční řešení</b></td>
+    <td class="rtbSepCell" align="right">&nbsp;</td>
+   </tr>
+   <tr style="display: none;">
+    <td class="lrtbCell" align="left" colspan="2"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.000 s (limit: 4.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi daty': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.001 s (limit: 4.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test kopirujiciho konstruktoru': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.003 s (limit: 3.999 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test operatoru =': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.007 s (limit: 3.996 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi hodnotami + mem debugger': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.040 s (limit: 2.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Celkové hodnocení: 100.00 % (= 1.00 * 1.00 * 1.00 * 1.00 * 1.00)</li></ul></li><li>Celkové procentní hodnocení: 100.00 %</li><li>Celkem bodů: 1.00 * 1.00 = 1.00</li></ul></td>
+   </tr>
+    <tr style="display: none;">
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>10</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>82</b></td>
+     <td class="ar"><span class="textOk">8.20 ± 6.35</span></td>
+     <td class="ar"><span class="textOk">20</span></td>
+     <td><tt>CSet::Remove</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>23</b></td>
+     <td class="ar"><span class="textOk">2.30 ± 1.68</span></td>
+     <td class="ar"><span class="textOk">5</span></td>
+     <td><tt>CSet::Insert</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>
+   </tbody></table>
+  </div>
+ </div>
+
+
+
+
+ <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbOkSepCell" align="left"><b>14</b></td>
+    <td class="tbOkSepCell" align="left"><b>18.04.2021 14:52:51</b></td>
+    <td class="rtbOkSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282900">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">1.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.000 s (limit: 4.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi daty': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.001 s (limit: 4.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test kopirujiciho konstruktoru': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.003 s (limit: 3.999 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test operatoru =': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.008 s (limit: 3.996 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi hodnotami + mem debugger': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.063 s (limit: 2.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Celkové hodnocení: 100.00 % (= 1.00 * 1.00 * 1.00 * 1.00 * 1.00)</li></ul></li><li>Použité nápovědy: 12</li><li>Penalizace za vyčerpané nápovědy: Není (12 &lt;= 25 limit)</li><li>Celkové procentní hodnocení: 100.00 %</li><li>Celkem bodů: 1.00 * 1.00 = 1.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>18</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>208</b></td>
+     <td class="ar"><span class="textOk">11.56 ± 7.43</span></td>
+     <td class="ar"><span class="textOk">28</span></td>
+     <td><tt>CSet::Insert</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>36</b></td>
+     <td class="ar"><span class="textOk">2.00 ± 1.70</span></td>
+     <td class="ar"><span class="textOk">6</span></td>
+     <td><tt>CSet::Insert</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbHalfSepCell" align="left"><b>13</b></td>
+    <td class="tbHalfSepCell" align="left"><b>18.04.2021 14:52:00</b></td>
+    <td class="rtbHalfSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282899">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.4579</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.000 s (limit: 4.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi daty': Úspěch<ul><li>Dosaženo: 85.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.001 s (limit: 4.000 s)</li><li>Úspěch v závazném testu, hodnocení: 85.00 %</li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109577&#39;)">[Zpřístupnit nápovědu (88 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109578&#39;)">[Zpřístupnit nápovědu (57 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109579&#39;)">[Zpřístupnit nápovědu (80 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109580&#39;)">[Zpřístupnit nápovědu (57 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109581&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109582&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109583&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109584&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li></ul></li>
+<li>Test 'Test kopirujiciho konstruktoru': Úspěch<ul><li>Dosaženo: 75.38 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.004 s (limit: 3.999 s)</li><li>Úspěch v závazném testu, hodnocení: 75.38 %</li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109585&#39;)">[Zpřístupnit nápovědu (90 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109586&#39;)">[Zpřístupnit nápovědu (102 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109587&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109588&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109589&#39;)">[Zpřístupnit nápovědu (42 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109590&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109591&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109592&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li></ul></li>
+<li>Test 'Test operatoru =': Úspěch<ul><li>Dosaženo: 83.09 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.008 s (limit: 3.995 s)</li><li>Úspěch v závazném testu, hodnocení: 83.09 %</li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109593&#39;)">[Zpřístupnit nápovědu (88 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109594&#39;)">[Zpřístupnit nápovědu (66 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109595&#39;)">[Zpřístupnit nápovědu (59 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109596&#39;)">[Zpřístupnit nápovědu (66 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109597&#39;)">[Zpřístupnit nápovědu (42 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109598&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109599&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109600&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li></ul></li>
+<li>Test 'Test nahodnymi hodnotami + mem debugger': Úspěch<ul><li>Dosaženo: 86.01 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.059 s (limit: 2.000 s)</li><li>Úspěch v závazném testu, hodnocení: 86.01 %</li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109601&#39;)">[Zpřístupnit nápovědu (98 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109602&#39;)">[Zpřístupnit nápovědu (90 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109603&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109604&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109605&#39;)">[Zpřístupnit nápovědu (42 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109606&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109607&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109608&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li></ul></li>
+<li>Celkové hodnocení: 45.79 % (= 1.00 * 0.85 * 0.75 * 0.83 * 0.86)</li></ul></li><li>Použité nápovědy: 12</li><li>Penalizace za vyčerpané nápovědy: Není (12 &lt;= 25 limit)</li><li>Celkové procentní hodnocení: 45.79 %</li><li>Celkem bodů: 0.46 * 1.00 = 0.46</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>18</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>208</b></td>
+     <td class="ar"><span class="textOk">11.56 ± 7.43</span></td>
+     <td class="ar"><span class="textOk">28</span></td>
+     <td><tt>CSet::Insert</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>35</b></td>
+     <td class="ar"><span class="textOk">1.94 ± 1.58</span></td>
+     <td class="ar"><span class="textOk">6</span></td>
+     <td><tt>CSet::Insert</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>12</b></td>
+    <td class="tbFailSepCell" align="left"><b>18.04.2021 14:50:22</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282897">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Neúspěch<ul><li>Dosaženo: 91.67 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.000 s (limit: 4.000 s)</li><li>Neúspěch v závazném testu, hodnocení: 0.00 %</li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109565&#39;)">[Zpřístupnit nápovědu (104 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109566&#39;)">[Zpřístupnit nápovědu (104 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109567&#39;)">[Zpřístupnit nápovědu (104 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109568&#39;)">[Zpřístupnit nápovědu (78 B)]</a></li></ul></li>
+<li>Celkové hodnocení: 0.00 %</li></ul></li><li>Použité nápovědy: 12</li><li>Penalizace za vyčerpané nápovědy: Není (12 &lt;= 25 limit)</li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 1.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>18</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>209</b></td>
+     <td class="ar"><span class="textOk">11.61 ± 7.51</span></td>
+     <td class="ar"><span class="textOk">28</span></td>
+     <td><tt>CSet::Insert</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>36</b></td>
+     <td class="ar"><span class="textOk">2.00 ± 1.70</span></td>
+     <td class="ar"><span class="textOk">6</span></td>
+     <td><tt>CSet::Insert</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbHalfSepCell" align="left"><b>11</b></td>
+    <td class="tbHalfSepCell" align="left"><b>18.04.2021 14:19:46</b></td>
+    <td class="rtbHalfSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282862">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.4964</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.000 s (limit: 4.000 s)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Test nahodnymi daty': Úspěch<ul><li>Dosaženo: 90.42 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.001 s (limit: 4.000 s)</li><li>Úspěch v závazném testu, hodnocení: 90.42 %</li><li><input type="checkbox" name="cb_T4109395" onchange="CBpressed( &#39;T4109395&#39; )">&nbsp;Nesprávný výstup<div id="pre_T4109395" style="display: none; padding-left: 20px;"><pre> CSet::Contains( heyiurbkxhwm ) after CSet::Remove( heyiurbkxhwm ) ret mismatch, r = false, s = true</pre></div></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109396&#39;)">[Zpřístupnit nápovědu (65 B)]</a></li><li><input type="checkbox" name="cb_T4109397" onchange="CBpressed( &#39;T4109397&#39; )">&nbsp;Nesprávný výstup<div id="pre_T4109397" style="display: none; padding-left: 20px;"><pre> CSet::Contains( heyiurbkxhwm ) ret mismatch, r = false, s = true</pre></div></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109398&#39;)">[Zpřístupnit nápovědu (78 B)]</a></li><li><input type="checkbox" name="cb_T4109399" onchange="CBpressed( &#39;T4109399&#39; )">&nbsp;Nesprávný výstup<div id="pre_T4109399" style="display: none; padding-left: 20px;"><pre> CSet::Contains( 8:26:03 ) ret mismatch, r = false, s = true</pre></div></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109400&#39;)">[Zpřístupnit nápovědu (68 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109401&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109402&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li></ul></li>
+<li>Test 'Test kopirujiciho konstruktoru': Úspěch<ul><li>Dosaženo: 80.61 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.002 s (limit: 3.999 s)</li><li>Úspěch v závazném testu, hodnocení: 80.61 %</li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109403&#39;)">[Zpřístupnit nápovědu (104 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109404&#39;)">[Zpřístupnit nápovědu (65 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109405&#39;)">[Zpřístupnit nápovědu (65 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109406&#39;)">[Zpřístupnit nápovědu (67 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109407&#39;)">[Zpřístupnit nápovědu (42 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109408&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109409&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109410&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li></ul></li>
+<li>Test 'Test operatoru =': Úspěch<ul><li>Dosaženo: 81.73 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.005 s (limit: 3.997 s)</li><li>Úspěch v závazném testu, hodnocení: 81.73 %</li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109411&#39;)">[Zpřístupnit nápovědu (104 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109412&#39;)">[Zpřístupnit nápovědu (100 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109413&#39;)">[Zpřístupnit nápovědu (100 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109414&#39;)">[Zpřístupnit nápovědu (65 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109415&#39;)">[Zpřístupnit nápovědu (42 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109416&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109417&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109418&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li></ul></li>
+<li>Test 'Test nahodnymi hodnotami + mem debugger': Úspěch<ul><li>Dosaženo: 83.33 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.049 s (limit: 2.000 s)</li><li>Úspěch v závazném testu, hodnocení: 83.33 %</li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109419&#39;)">[Zpřístupnit nápovědu (112 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109420&#39;)">[Zpřístupnit nápovědu (71 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109421&#39;)">[Zpřístupnit nápovědu (71 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109422&#39;)">[Zpřístupnit nápovědu (71 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109423&#39;)">[Zpřístupnit nápovědu (42 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109424&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109425&#39;)">[Zpřístupnit nápovědu (60 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109426&#39;)">[Zpřístupnit nápovědu (61 B)]</a></li></ul></li>
+<li>Celkové hodnocení: 49.64 % (= 1.00 * 0.90 * 0.81 * 0.82 * 0.83)</li></ul></li><li>Použité nápovědy: 9</li><li>Penalizace za vyčerpané nápovědy: Není (9 &lt;= 25 limit)</li><li>Celkové procentní hodnocení: 49.64 %</li><li>Celkem bodů: 0.50 * 1.00 = 0.50</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>18</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>209</b></td>
+     <td class="ar"><span class="textOk">11.61 ± 7.51</span></td>
+     <td class="ar"><span class="textOk">28</span></td>
+     <td><tt>CSet::Insert</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>35</b></td>
+     <td class="ar"><span class="textOk">1.94 ± 1.58</span></td>
+     <td class="ar"><span class="textOk">6</span></td>
+     <td><tt>CSet::Insert</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>10</b></td>
+    <td class="tbFailSepCell" align="left"><b>18.04.2021 14:14:08</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282854">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Neúspěch<ul><li>Dosaženo: 91.67 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.000 s (limit: 4.000 s)</li><li>Neúspěch v závazném testu, hodnocení: 0.00 %</li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109351&#39;)">[Zpřístupnit nápovědu (104 B)]</a></li><li><input type="checkbox" name="cb_T4109352" onchange="CBpressed( &#39;T4109352&#39; )">&nbsp;Nesprávný výstup<div id="pre_T4109352" style="display: none; padding-left: 20px;"><pre> CSet::Contains( Jerabek Michal ) after CSet::Remove( Jerabek Michal ) ret mismatch, r = false, s = true</pre></div></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109353&#39;)">[Zpřístupnit nápovědu (104 B)]</a></li><li>Nesprávný výstup <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=L4109354&#39;)">[Zpřístupnit nápovědu (78 B)]</a></li></ul></li>
+<li>Celkové hodnocení: 0.00 %</li></ul></li><li>Použité nápovědy: 8</li><li>Penalizace za vyčerpané nápovědy: Není (8 &lt;= 25 limit)</li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 1.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>18</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>209</b></td>
+     <td class="ar"><span class="textOk">11.61 ± 7.51</span></td>
+     <td class="ar"><span class="textOk">28</span></td>
+     <td><tt>CSet::Insert</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>36</b></td>
+     <td class="ar"><span class="textOk">2.00 ± 1.70</span></td>
+     <td class="ar"><span class="textOk">6</span></td>
+     <td><tt>CSet::Insert</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>9</b></td>
+    <td class="tbFailSepCell" align="left"><b>18.04.2021 14:08:00</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282851">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li><input type="checkbox" name="cb_C1288664" onchange="CBpressed( &#39;C1288664&#39; )">&nbsp;Chyba při základní kompilaci<pre id="pre_C1288664" style="display: none">In file included from testbed.cpp:151:
+tested: In instantiation of ‘student_d76ff0a57122fd105bceb10c8a21719d::CSet&lt;T&gt;::CNode::CNode() [with T = CTime]’:
+tested:178:23:   required from ‘bool student_d76ff0a57122fd105bceb10c8a21719d::CSet&lt;T&gt;::Insert(const T&amp;) [with T = CTime]’
+tested:130:4:   required from ‘student_d76ff0a57122fd105bceb10c8a21719d::CSet&lt;T&gt;::CSet(const student_d76ff0a57122fd105bceb10c8a21719d::CSet&lt;T&gt;&amp;) [with T = CTime]’
+testbed.cpp:540:20:   required from ‘void randomTestCopyCons(int&amp;, int&amp;, int, int, int, Random) [with T = CTime; Random = RandomCTime]’
+testbed.cpp:712:68:   required from here
+tested:46:9: error: ‘constexpr CTime::CTime()’ is private within this context
+         {
+         ^
+testbed.cpp:610:5: note: declared private here
+     CTime () = default;
+     ^~~~~
+</pre></li></ul></li><li>Použité nápovědy: 7</li><li>Penalizace za vyčerpané nápovědy: Není (7 &lt;= 25 limit)</li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 1.00 = 0.00</li></ul></td>
+   </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>8</b></td>
+    <td class="tbFailSepCell" align="left"><b>18.04.2021 14:02:58</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282842">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li><input type="checkbox" name="cb_C1288655" onchange="CBpressed( &#39;C1288655&#39; )">&nbsp;Chyba při základní kompilaci<pre id="pre_C1288655" style="display: none">In file included from testbed.cpp:151:
+tested: In instantiation of ‘student_6aead3a51e72cefe11901f382f23d1dc::CSet&lt;T&gt;::CNode::CNode() [with T = CTime]’:
+tested:178:23:   required from ‘bool student_6aead3a51e72cefe11901f382f23d1dc::CSet&lt;T&gt;::Insert(const T&amp;) [with T = CTime]’
+tested:131:4:   required from ‘student_6aead3a51e72cefe11901f382f23d1dc::CSet&lt;T&gt;::CSet(const student_6aead3a51e72cefe11901f382f23d1dc::CSet&lt;T&gt;&amp;) [with T = CTime]’
+testbed.cpp:540:20:   required from ‘void randomTestCopyCons(int&amp;, int&amp;, int, int, int, Random) [with T = CTime; Random = RandomCTime]’
+testbed.cpp:712:68:   required from here
+tested:41:9: error: ‘constexpr CTime::CTime()’ is private within this context
+         {
+         ^
+testbed.cpp:610:5: note: declared private here
+     CTime () = default;
+     ^~~~~
+</pre></li></ul></li><li>Použité nápovědy: 6</li><li>Penalizace za vyčerpané nápovědy: Není (6 &lt;= 25 limit)</li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 1.00 = 0.00</li></ul></td>
+   </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>7</b></td>
+    <td class="tbFailSepCell" align="left"><b>18.04.2021 13:59:24</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282839">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li><input type="checkbox" name="cb_C1288652" onchange="CBpressed( &#39;C1288652&#39; )">&nbsp;Chyba při základní kompilaci<pre id="pre_C1288652" style="display: none">In file included from testbed.cpp:151:
+tested: In instantiation of ‘student_b58cae9bbae9fed427d382194a78c84f::CSet&lt;T&gt;::CNode::CNode() [with T = CTime]’:
+tested:178:23:   required from ‘bool student_b58cae9bbae9fed427d382194a78c84f::CSet&lt;T&gt;::Insert(const T&amp;) [with T = CTime]’
+tested:131:4:   required from ‘student_b58cae9bbae9fed427d382194a78c84f::CSet&lt;T&gt;::CSet(const student_b58cae9bbae9fed427d382194a78c84f::CSet&lt;T&gt;&amp;) [with T = CTime]’
+testbed.cpp:540:20:   required from ‘void randomTestCopyCons(int&amp;, int&amp;, int, int, int, Random) [with T = CTime; Random = RandomCTime]’
+testbed.cpp:712:68:   required from here
+tested:36:9: error: ‘constexpr CTime::CTime()’ is private within this context
+         {
+         ^
+testbed.cpp:610:5: note: declared private here
+     CTime () = default;
+     ^~~~~
+</pre></li></ul></li><li>Použité nápovědy: 5</li><li>Penalizace za vyčerpané nápovědy: Není (5 &lt;= 25 limit)</li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 1.00 = 0.00</li></ul></td>
+   </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>6</b></td>
+    <td class="tbFailSepCell" align="left"><b>18.04.2021 13:58:40</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282838">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li><input type="checkbox" name="cb_C1288651" onchange="CBpressed( &#39;C1288651&#39; )">&nbsp;Chyba při základní kompilaci<pre id="pre_C1288651" style="display: none">In file included from testbed.cpp:151:
+tested: In instantiation of ‘student_07738ff7fd85ef5e3e16d04832820cad::CSet&lt;T&gt;::CNode::CNode() [with T = CTime]’:
+tested:178:23:   required from ‘bool student_07738ff7fd85ef5e3e16d04832820cad::CSet&lt;T&gt;::Insert(const T&amp;) [with T = CTime]’
+tested:131:4:   required from ‘student_07738ff7fd85ef5e3e16d04832820cad::CSet&lt;T&gt;::CSet(const student_07738ff7fd85ef5e3e16d04832820cad::CSet&lt;T&gt;&amp;) [with T = CTime]’
+testbed.cpp:540:20:   required from ‘void randomTestCopyCons(int&amp;, int&amp;, int, int, int, Random) [with T = CTime; Random = RandomCTime]’
+testbed.cpp:712:68:   required from here
+tested:36:9: error: ‘constexpr CTime::CTime()’ is private within this context
+         {
+         ^
+testbed.cpp:610:5: note: declared private here
+     CTime () = default;
+     ^~~~~
+</pre></li></ul></li><li>Použité nápovědy: 4</li><li>Penalizace za vyčerpané nápovědy: Není (4 &lt;= 25 limit)</li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 1.00 = 0.00</li></ul></td>
+   </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>5</b></td>
+    <td class="tbFailSepCell" align="left"><b>18.04.2021 13:56:16</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282837">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li><input type="checkbox" name="cb_C1288650" onchange="CBpressed( &#39;C1288650&#39; )">&nbsp;Chyba při základní kompilaci<pre id="pre_C1288650" style="display: none">In file included from testbed.cpp:151:
+tested: In instantiation of ‘student_0aec64b21564e7e2f68dcc539a3ea991::CSet&lt;T&gt;::CNode::CNode() [with T = CTime]’:
+tested:178:23:   required from ‘bool student_0aec64b21564e7e2f68dcc539a3ea991::CSet&lt;T&gt;::Insert(const T&amp;) [with T = CTime]’
+tested:131:4:   required from ‘student_0aec64b21564e7e2f68dcc539a3ea991::CSet&lt;T&gt;::CSet(const student_0aec64b21564e7e2f68dcc539a3ea991::CSet&lt;T&gt;&amp;) [with T = CTime]’
+testbed.cpp:540:20:   required from ‘void randomTestCopyCons(int&amp;, int&amp;, int, int, int, Random) [with T = CTime; Random = RandomCTime]’
+testbed.cpp:712:68:   required from here
+tested:36:9: error: ‘constexpr CTime::CTime()’ is private within this context
+         {
+         ^
+testbed.cpp:610:5: note: declared private here
+     CTime () = default;
+     ^~~~~
+</pre></li></ul></li><li>Použité nápovědy: 3</li><li>Penalizace za vyčerpané nápovědy: Není (3 &lt;= 25 limit)</li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 1.00 = 0.00</li></ul></td>
+   </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>4</b></td>
+    <td class="tbFailSepCell" align="left"><b>18.04.2021 13:54:47</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282836">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li><input type="checkbox" name="cb_C1288649" onchange="CBpressed( &#39;C1288649&#39; )">&nbsp;Chyba při základní kompilaci<pre id="pre_C1288649" style="display: none">In file included from testbed.cpp:151:
+tested: In instantiation of ‘student_d8baa9fdf4200a0cc58bc93069b9de94::CSet&lt;T&gt;::CNode::CNode() [with T = CTime]’:
+tested:178:23:   required from ‘bool student_d8baa9fdf4200a0cc58bc93069b9de94::CSet&lt;T&gt;::Insert(const T&amp;) [with T = CTime]’
+tested:131:4:   required from ‘student_d8baa9fdf4200a0cc58bc93069b9de94::CSet&lt;T&gt;::CSet(const student_d8baa9fdf4200a0cc58bc93069b9de94::CSet&lt;T&gt;&amp;) [with T = CTime]’
+testbed.cpp:540:20:   required from ‘void randomTestCopyCons(int&amp;, int&amp;, int, int, int, Random) [with T = CTime; Random = RandomCTime]’
+testbed.cpp:712:68:   required from here
+tested:36:9: error: ‘constexpr CTime::CTime()’ is private within this context
+         {
+         ^
+testbed.cpp:610:5: note: declared private here
+     CTime () = default;
+     ^~~~~
+</pre></li></ul></li><li>Použité nápovědy: 2</li><li>Penalizace za vyčerpané nápovědy: Není (2 &lt;= 25 limit)</li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 1.00 = 0.00</li></ul></td>
+   </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>3</b></td>
+    <td class="tbFailSepCell" align="left"><b>18.04.2021 13:53:56</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282835">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li><input type="checkbox" name="cb_C1288648" onchange="CBpressed( &#39;C1288648&#39; )">&nbsp;Chyba při základní kompilaci<pre id="pre_C1288648" style="display: none">In file included from testbed.cpp:151:
+tested: In instantiation of ‘bool student_c61e8ab492b4b3529a0d423f0b72931c::CSet&lt;T&gt;::Insert(const T&amp;) [with T = CTime]’:
+tested:131:4:   required from ‘student_c61e8ab492b4b3529a0d423f0b72931c::CSet&lt;T&gt;::CSet(const student_c61e8ab492b4b3529a0d423f0b72931c::CSet&lt;T&gt;&amp;) [with T = CTime]’
+testbed.cpp:540:20:   required from ‘void randomTestCopyCons(int&amp;, int&amp;, int, int, int, Random) [with T = CTime; Random = RandomCTime]’
+testbed.cpp:712:68:   required from here
+tested:184:30: error: no match for ‘operator&gt;’ (operand types are ‘const CTime’ and ‘const CTime’)
+         if (m_Begin-&gt;Value() &gt; value)
+In file included from /usr/include/c++/8/bits/stl_algobase.h:64,
+                 from /usr/include/c++/8/bits/char_traits.h:39,
+                 from /usr/include/c++/8/ios:40,
+                 from /usr/include/c++/8/ostream:38,
+                 from /usr/include/c++/8/iostream:39,
+                 from testbed.cpp:1:
+/usr/include/c++/8/bits/stl_pair.h:467:5
+
+&lt;skipping 18423 B&gt;
+
+.h:1783:5: note:   template argument deduction/substitution failed:
+In file included from testbed.cpp:151:
+tested:184:30: note:   ‘const CTime’ is not derived from ‘const std::vector&lt;_Tp, _Alloc&gt;’
+         if (m_Begin-&gt;Value() &gt; value)
+tested: In instantiation of ‘student_c61e8ab492b4b3529a0d423f0b72931c::CSet&lt;T&gt;::CNode::CNode() [with T = CTime]’:
+tested:178:23:   required from ‘bool student_c61e8ab492b4b3529a0d423f0b72931c::CSet&lt;T&gt;::Insert(const T&amp;) [with T = CTime]’
+tested:131:4:   required from ‘student_c61e8ab492b4b3529a0d423f0b72931c::CSet&lt;T&gt;::CSet(const student_c61e8ab492b4b3529a0d423f0b72931c::CSet&lt;T&gt;&amp;) [with T = CTime]’
+testbed.cpp:540:20:   required from ‘void randomTestCopyCons(int&amp;, int&amp;, int, int, int, Random) [with T = CTime; Random = RandomCTime]’
+testbed.cpp:712:68:   required from here
+tested:36:9: error: ‘constexpr CTime::CTime()’ is private within this context
+         {
+         ^
+testbed.cpp:610:5: note: declared private here
+     CTime () = default;
+     ^~~~~
+</pre></li></ul></li><li>Použité nápovědy: 1</li><li>Penalizace za vyčerpané nápovědy: Není (1 &lt;= 25 limit)</li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 1.00 = 0.00</li></ul></td>
+   </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>2</b></td>
+    <td class="tbFailSepCell" align="left"><b>18.04.2021 13:10:53</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282807">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li><input type="checkbox" name="cb_C1288620" onchange="CBpressed( &#39;C1288620&#39; )">&nbsp;Chyba při základní kompilaci<pre id="pre_C1288620" style="display: none">In file included from testbed.cpp:151:
+tested: In instantiation of ‘student_7c124c10dabc9bc05e0bf8923c75debd::CSet&lt;T&gt;::CSet(const student_7c124c10dabc9bc05e0bf8923c75debd::CSet&lt;T&gt;&amp;) [with T = CTime]’:
+testbed.cpp:540:20:   required from ‘void randomTestCopyCons(int&amp;, int&amp;, int, int, int, Random) [with T = CTime; Random = RandomCTime]’
+testbed.cpp:712:68:   required from here
+tested:82:16: error: ‘constexpr CTime::CTime()’ is private within this context
+         data = new T[size];
+                ^~~~~~~~~~~
+testbed.cpp:610:5: note: declared private here
+     CTime () = default;
+     ^~~~~
+In file included from testbed.cpp:151:
+tested: In instantiation of ‘bool student_7c124c10dabc9bc05e0bf8923c75debd::CSet&lt;T&gt;::Insert(const T&amp;) [with T = CTime]’:
+testbed.cpp:201:10:   required from ‘void opInsert(teacher_80e6d6e43a865df86bff2ffc02b9be5b::CSet&lt;T&gt;**, student_7c124c10dabc9bc05e0bf8923c75debd::CSet&lt;T&gt;**, size_t, const T&amp;, int&amp;, int&amp;) [with T = CTime; size_t = long unsigned int]’
+testbed.cpp:486:17:   required from ‘void performInsert(int&amp;, int&amp;, teacher_80e6d6e43a865df86bff2ffc02b9be5b::CSet&lt;T&gt;*, student_7c124c10dabc9bc05e0bf8923c75debd::CSet&lt;T&gt;*, int, Random) [with T = CTime; Random = RandomCTime]’
+testbed.cpp:517:18:   required from ‘void randomTestData(int&amp;, int&amp;, int, int, int, Random) [with T = CTime; Random = RandomCTime]’
+testbed.cpp:705:65:   required from here
+tested:108:20: error: ‘constexpr CTime::CTime()’ is private within this context
+             data = new T[size];
+                    ^~~~~~~~~~~
+testbed.cpp:610:5: note: declared private here
+     CTime () = default;
+     ^~~~~
+</pre></li></ul></li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 1.00 = 0.00</li></ul></td>
+   </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>1</b></td>
+    <td class="tbFailSepCell" align="left"><b>18.04.2021 12:49:39</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Sub=1282794">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Stav odevzdání:</b></td>
+    <td class="tCell" align="left">Ohodnoceno</td>
+
+
+
+    <td class="rtbCell" rowspan="2">&nbsp;</td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Hodnocení:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li>Chyba při základní kompilaci <a href="javascript: unlockAdvice(&#39;?X=Unlock&amp;Cou=319&amp;Tgr=2096&amp;Tsk=1691&amp;Unl=C1288607&#39;)">[Zpřístupnit nápovědu (1648 B)]</a></li></ul></li><li>Celkové procentní hodnocení: 0.00 %</li><li>Celkem bodů: 0.00 * 1.00 = 0.00</li></ul></td>
+   </tr>   </tbody></table>
+  </div>
+ </div>
+  </center>
+ </form>
+
+
+
+
+
+
+
+
+<script language="javascript" type="text/javascript">
+<!--
+
+var deadLine = new Date ( 1618783199 * 1000 );
+
+function CBpressed ( num )
+ {
+   var pre, cb;
+
+   cb = MM_findObj ( "cb_" + num );
+   pre = MM_findObj ( "pre_" + num );
+   if ( cb != null && pre != null )
+    {
+      pre . style . display = cb . checked ? "block" : "none";
+    }
+ }
+
+function unlockAdvice ( url )
+ {
+   if ( confirm ( 'Máte k dispozici pouze omezený počet nápověd. Navíc, použití nápovědy může snížit bodové hodnocení. Opravdu chcete zpřístupnit tuto nápovědu?' ) )
+    this . location = url;
+ }
+
+function setCountdown ( )
+ {
+   var d = new Date ();
+   var x = ( deadLine . getTime () - d . getTime () );
+   var tgt = document . getElementById ( "countdown" );
+
+   if ( x > 0 )
+    {
+      var s = Math . floor ( x / 1000 );
+      var ms = (x % 1000) + "";
+
+      while ( ms . length  < 3 ) ms = "0" + ms;
+
+      tgt . innerHTML = s + "." + ms + " sec";
+
+      window . setTimeout ( setCountdown, 117 );
+    }
+   else
+    {
+      tgt . innerHTML = '&nbsp;';
+    }
+ }
+
+function showRefSolution ( )
+ {
+   var t = document . getElementById ( "reftable" );
+   var x = document . getElementsByName ( "SHOW_REF" )[0];
+
+   if ( ! x ) return;
+   var r1 = t . rows[1], r2 = t . rows[2];
+
+   if ( x . checked )
+    {
+      r1 . style . display = "";
+      if ( r2 ) r2 . style . display = "";
+    }
+   else
+    {
+      r1 . style . display = "none";
+      if ( r2 ) r2 . style . display = "none";
+    }
+ }
+
+
+setCountdown ();
+showRefSolution ();
+
+// -->
+</script>
+
+
+
+
+
+ 
+
+<!-- Template run time: 0.089586019515991 sec -->
+</body></html>
