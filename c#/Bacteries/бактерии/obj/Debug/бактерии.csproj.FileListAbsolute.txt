@@ -1,0 +1,49 @@
+C:\Users\олнг\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.csprojResolveAssemblyReference.cache
+C:\Users\олнг\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.Form1.resources
+C:\Users\олнг\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.Properties.Resources.resources
+C:\Users\олнг\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.csproj.GenerateResource.Cache
+C:\Users\олнг\Desktop\Новая папка (3)\бактерии\бактерии\bin\Debug\бактерии.exe.config
+C:\Users\олнг\Desktop\Новая папка (3)\бактерии\бактерии\bin\Debug\бактерии.exe
+C:\Users\олнг\Desktop\Новая папка (3)\бактерии\бактерии\bin\Debug\бактерии.pdb
+C:\Users\олнг\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.exe
+C:\Users\олнг\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.pdb
+C:\Users\troll\Desktop\Новая папка (3)\бактерии\бактерии\bin\Debug\бактерии.exe.config
+C:\Users\troll\Desktop\Новая папка (3)\бактерии\бактерии\bin\Debug\бактерии.exe
+C:\Users\troll\Desktop\Новая папка (3)\бактерии\бактерии\bin\Debug\бактерии.pdb
+C:\Users\troll\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.csprojResolveAssemblyReference.cache
+C:\Users\troll\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.Form1.resources
+C:\Users\troll\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.Properties.Resources.resources
+C:\Users\troll\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.csproj.GenerateResource.Cache
+C:\Users\troll\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.exe
+C:\Users\troll\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.pdb
+C:\Users\олнг\Desktop\Новая папка (3)\бактерии\бактерии\obj\Debug\бактерии.csproj.CoreCompileInputs.cache
+C:\Users\Дом\Dropbox\бактерии\бактерии\bin\Debug\бактерии.exe.config
+C:\Users\Дом\Dropbox\бактерии\бактерии\bin\Debug\бактерии.exe
+C:\Users\Дом\Dropbox\бактерии\бактерии\bin\Debug\бактерии.pdb
+C:\Users\Дом\Dropbox\бактерии\бактерии\obj\Debug\бактерии.csprojResolveAssemblyReference.cache
+C:\Users\Дом\Dropbox\бактерии\бактерии\obj\Debug\бактерии.Form1.resources
+C:\Users\Дом\Dropbox\бактерии\бактерии\obj\Debug\бактерии.Properties.Resources.resources
+C:\Users\Дом\Dropbox\бактерии\бактерии\obj\Debug\бактерии.csproj.GenerateResource.Cache
+C:\Users\Дом\Dropbox\бактерии\бактерии\obj\Debug\бактерии.csproj.CoreCompileInputs.cache
+C:\Users\Дом\Dropbox\бактерии\бактерии\obj\Debug\бактерии.exe
+C:\Users\Дом\Dropbox\бактерии\бактерии\obj\Debug\бактерии.pdb
+C:\Users\олнг\Dropbox\бактерии\бактерии\bin\Debug\бактерии.exe.config
+C:\Users\олнг\Dropbox\бактерии\бактерии\bin\Debug\бактерии.exe
+C:\Users\олнг\Dropbox\бактерии\бактерии\bin\Debug\бактерии.pdb
+C:\Users\олнг\Dropbox\бактерии\бактерии\obj\Debug\бактерии.csprojResolveAssemblyReference.cache
+C:\Users\олнг\Dropbox\бактерии\бактерии\obj\Debug\бактерии.Form1.resources
+C:\Users\олнг\Dropbox\бактерии\бактерии\obj\Debug\бактерии.Properties.Resources.resources
+C:\Users\олнг\Dropbox\бактерии\бактерии\obj\Debug\бактерии.csproj.GenerateResource.Cache
+C:\Users\олнг\Dropbox\бактерии\бактерии\obj\Debug\бактерии.csproj.CoreCompileInputs.cache
+C:\Users\олнг\Dropbox\бактерии\бактерии\obj\Debug\бактерии.exe
+C:\Users\олнг\Dropbox\бактерии\бактерии\obj\Debug\бактерии.pdb
+C:\Users\olegb\Documents\GitHub\my_programs\c#\Bacteries\бактерии\bin\Debug\бактерии.exe.config
+C:\Users\olegb\Documents\GitHub\my_programs\c#\Bacteries\бактерии\bin\Debug\бактерии.exe
+C:\Users\olegb\Documents\GitHub\my_programs\c#\Bacteries\бактерии\bin\Debug\бактерии.pdb
+C:\Users\olegb\Documents\GitHub\my_programs\c#\Bacteries\бактерии\obj\Debug\бактерии.csproj.AssemblyReference.cache
+C:\Users\olegb\Documents\GitHub\my_programs\c#\Bacteries\бактерии\obj\Debug\бактерии.Form1.resources
+C:\Users\olegb\Documents\GitHub\my_programs\c#\Bacteries\бактерии\obj\Debug\бактерии.Properties.Resources.resources
+C:\Users\olegb\Documents\GitHub\my_programs\c#\Bacteries\бактерии\obj\Debug\бактерии.csproj.GenerateResource.cache
+C:\Users\olegb\Documents\GitHub\my_programs\c#\Bacteries\бактерии\obj\Debug\бактерии.csproj.CoreCompileInputs.cache
+C:\Users\olegb\Documents\GitHub\my_programs\c#\Bacteries\бактерии\obj\Debug\бактерии.exe
+C:\Users\olegb\Documents\GitHub\my_programs\c#\Bacteries\бактерии\obj\Debug\бактерии.pdb
